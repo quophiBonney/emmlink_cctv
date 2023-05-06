@@ -2,16 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Emmlink Technology - Home Best Internet Experience</title>
+    <title>Emmlink Technology - Your Ultimate Security Partner</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
     <meta
-      content="Emmlinnk Technology offers wide range of professional CCTV installation services to the people of Ghana and beyond."
+      content="CCTV maintenance and support, Wireless security cameras, Access control"
+      name="keywords"
+    />
+    <meta
+      content="Emmlink Technology offers wide range of professional CCTV installation services to the people of Ghana and beyond."
       name="description"
     />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+    <link href="img/logo.jpg" rel="icon" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,6 +23,8 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="dist/aos.css" />
 
     <!-- Icon Font Stylesheet -->
     <link
@@ -111,9 +116,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-4 py-lg-0">
-          <a href="index.html" title="home" class="nav-item nav-link active"
-            >Home</a
-          >
+          <a href="index.html" title="home" class="nav-item nav-link">Home</a>
           <a href="about.html" title="about" class="nav-item nav-link">About</a>
           <a href="service.html" title="service" class="nav-item nav-link"
             >Service</a
@@ -137,7 +140,7 @@
               >
             </div>
           </div>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
+          <a href="contact.html" class="nav-item nav-link active">Contact</a>
         </div>
         <div class="h-100 d-lg-inline-flex align-items-center d-none">
           <a
@@ -190,6 +193,9 @@
           <div
             class="col-lg-6 contact-text py-5 wow fadeIn"
             data-wow-delay="0.5s"
+            data-aos="slide-right"
+            data-aos-duration="2000"
+            data-aos-delay="100"
           >
             <div class="p-lg-5 ps-lg-0">
               <div class="section-title text-start">
@@ -250,7 +256,13 @@
               </form>
             </div>
           </div>
-          <div class="col-lg-6 pe-lg-0" style="min-height: 400px">
+          <div
+            class="col-lg-6 pe-lg-0"
+            style="min-height: 400px"
+            data-aos="slide-left"
+            data-aos-duration="2000"
+            data-aos-delay="200"
+          >
             <div class="position-relative h-100">
               <iframe
                 class="position-absolute w-100 h-100"
@@ -364,5 +376,10 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
